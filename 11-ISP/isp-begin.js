@@ -1,4 +1,3 @@
-// Bad Example
 class Vehicle {
   constructor(make, model, year) {
     this.make = make;
@@ -44,5 +43,5 @@ function drive(vehicle) {
 const car = new Car('Honda', 'Civic', 2020);
 const motorbike = new Motorbike('Harley Davidson', 'Softail', 2021);
 
-drive(car); // Output: Engine started, AC turned on, Engine stopped
-drive(motorbike); // Output: Engine started, AC turned on, Engine stopped (Incorrect)
+drive(car); 
+drive(motorbike); 

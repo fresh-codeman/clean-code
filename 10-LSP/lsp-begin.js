@@ -1,4 +1,3 @@
-// Bad Example
 class Rectangle {
   constructor(width, height) {
     this.width = width;

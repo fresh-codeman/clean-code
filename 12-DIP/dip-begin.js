@@ -1,4 +1,3 @@
-// Bad Example
 class DataAccessLayer {
   getAllUsers() {
     // Code to retrieve all users from the database
