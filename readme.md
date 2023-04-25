@@ -11,7 +11,9 @@
 3. Avoid magic numbers 
     LINKS [link 1](https://levelup.gitconnected.com/magic-numbers-820d2d570cc5), [link 2](https://help.geektrust.com/article/101-magic-numbers)
 4. Only write minimum to the point comments.
-5. remove dead code if any present.
+5. Do not repeat your self.
+6. Remove dead code if any present.
+7. Good methods/ function
 
 ## Important links to read
 [guide to write good code](https://www.freecodecamp.org/news/the-junior-developers-guide-to-writing-super-clean-and-readable-code-cd2568e08aae/)

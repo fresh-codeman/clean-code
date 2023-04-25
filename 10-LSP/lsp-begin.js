@@ -4,6 +4,14 @@ class Rectangle {
     this.height = height;
   }
 
+  getWidth(){
+    return this.width
+  }
+
+  getHeight(){
+    return this.height
+  }
+
   setWidth(width) {
     this.width = width;
   }
@@ -29,14 +37,16 @@ class Square extends Rectangle {
   }
 }
 
-function calculateArea(rectangle) {
-  rectangle.setWidth(5);
-  rectangle.setHeight(10);
-  return rectangle.area();
+class Test {
+  getAreaTest(rectangle) {
+    let width = rectangle.getWidth();
+    rectangle.setHeight(10);
+    console.log(`Expected area of + ${width * 10} + ", got " + ${rectangle.area()}`);
+  }
 }
-
 const rectangle = new Rectangle(5, 10);
-const square = new Square(5);
+const testArea = new Test();
+testArea.getAreaTest(rectangle);
 
-console.log(calculateArea(rectangle));
-console.log(calculateArea(square)); 
+const square = new Square(5);
+testArea.getAreaTest(square);
