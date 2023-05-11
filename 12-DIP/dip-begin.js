@@ -1,23 +1,29 @@
-class DataAccessLayer {
-  getAllUsers() {
-    // Code to retrieve all users from the database
+class Store {
+  constructor(user){
+    this.stirpe = new Stirpe(user)
   }
 
-  createUser(user) {
-    // Code to create a new user in the database
+  purchaseBike(quantity){
+    this.stirpe.makePayment(200*quantity*100)
+  }
+
+  purchaseHelmet(quantity){
+    this.stirpe.makePayment(15*quantity*100)
   }
 }
 
-class UserService {
-  constructor() {
-    this.dataAccessLayer = new DataAccessLayer();
+class Stirpe{
+  constructor(user){
+    this.user = user
   }
 
-  getAllUsers() {
-    return this.dataAccessLayer.getAllUsers();
+  makePayment(amountInCents){
+    console.log(`${this.user} made payment of $${amountInCents/100}`)
   }
+}
 
-  createUser(user) {
-    return this.dataAccessLayer.createUser(user);
+class Paypal{
+  makePayment(user, amountInCents){
+    console.log(`${user} made payment of $${amountInCents/100}`)
   }
 }

@@ -13,32 +13,50 @@ class Invoice {
 
     return priceWithTaxes;
   }
+}
 
-  printInvoice() {
-    console.log(`${this.quantity}x ${this.book.name} ${this.book.price}$`);
-    console.log(`Discount Rate: ${this.discountRate}`);
-    console.log(`Tax Rate: ${this.taxRate}`);
-    console.log(`Total: ${this.total}`);
+class InvoicePrinter {
+  constructor(invoice) {
+    this.invoice = invoice;
   }
-
+  
+  print() {
+    console.log(`${this.invoice.quantity}x ${this.invoice.book.name} ${this.invoice.book.price}`);
+    console.log(`Discount Rate: ${this.invoice.discountRate}`);
+    console.log(`Tax Rate: ${this.invoice.taxRate}`);
+    console.log(`Total: ${this.invoice.total}`);
+  }
+}
+class InvoicePersistence {
+  constructor(invoice) {
+    this.invoice = invoice;
+  }
+  
   saveToFile(filename) {
     // Creates a file with given name and writes the invoice
+  }
+  saveToDb(filename){
+    
   }
 }
 
 
 
+class TaskList{
+  constructor(){
+    TaskList = []
+  }
 
+  addTask(Task){
+    self.TaskList.push(Task)
+  }
+}
 
-// Question 1
 class Task {
-  static taskList = [];
-  
   constructor(params) {
     this.name = params['name'];
     this.description = params['description'];
     this.subtaskList = params['subTask'];
-    Task.taskList.push(this);
   }
 
   calculateTaskCost() {
@@ -50,13 +68,10 @@ class Task {
   }
 }
 
-
 // Create a task object
 const subTask1 = { name: 'Subtask 1', cost: 100 };
 const subTask2 = { name: 'Subtask 2', cost: 200 };
-
-// taskList will be seprate
-
 const task = new Task({ name: 'Task 1', description: 'This is Task 1', subTask: [subTask1, subTask2] });
-
+const taskList = new TaskList()
+taskList.addTask(task)
 console.log(task.calculateTaskCost());
