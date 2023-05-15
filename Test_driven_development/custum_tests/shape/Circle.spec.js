@@ -1,4 +1,5 @@
 var assert = require('assert');
+var should = require
 const {Circle} = require('../../shapes/Circle.js'); 
  describe('class Circle',function() {
     describe('#getDiameter', function(done){
