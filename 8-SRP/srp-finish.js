@@ -6,7 +6,10 @@ class Invoice {
     this.taxRate = taxRate;
     this.total = this.calculateTotal();
   }
-  
+
+
+let alu = new metal(params)
+
   calculateTotal() {
     let price = ((this.book.price - this.book.price * this.discountRate) * this.quantity);
     let priceWithTaxes = price * (1 + this.taxRate);
