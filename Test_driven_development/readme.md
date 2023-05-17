@@ -6,5 +6,3 @@
 ### intergration tests
 ### mocha uses globals
 ### create suite
-describe(title, callback)
-    it

@@ -1,19 +1,12 @@
-class ShapeArea {
-  constructor(type, params) {
-    this.type = type;
-    this.params = params
-  }
-
-  area() {
-    if (this.type = 'square'){
-      side = this.params['side'];
-      return side*side;
-    }
-    else if(this.type = 'circle') {
-      radias = this.params['radias'];
+function getArea(type,params){
+    if(type = 'cirlce'){
+      radias = params['radias'];
       return 3.14*radias*raidas;
     }
-  }
+    else if(type = 'sqare') {
+      side = params['side'];
+      return side*side;
+    }
 }
 
 
@@ -77,6 +70,10 @@ class InvoicePersistence {
   }
 
   saveToDatabase() {
+    // Saves the invoice to database
+  }
+
+  saveToBucket() {
     // Saves the invoice to database
   }
 }
