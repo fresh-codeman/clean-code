@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "mocha --recursive custum_tests",
-    "test-with-coverage": "nyc mocha"
+    "test-with-coverage": "nyc mocha --recursive custum_tests"
   },
   "author": "",
   "license": "ISC",
