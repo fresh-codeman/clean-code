@@ -12,5 +12,5 @@
 ### 11. The Interface Segregation Principle
     Segregation Principle is about separating the interfaces
 
-### 12. The Dependency Inversion Principle
+### 12. The Dependency Inversion Principle #extra added 
     The Dependency Inversion principle states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.

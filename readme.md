@@ -4,8 +4,8 @@
     * Prefer descriptive names over short form
     * Follow Coding Convention
     * The class name should be a noun
-    * Avoid clutters like _l, m_, o_,O1, Ol, lO, etc
-    * Avoid using non-ASCII characters and words from the local language
+    * Avoid ambiguious names like _l, m_, o_,O1, Ol, lO, etc
+    * Avoid using non-ASCII characters and characters from the local language
     * Make good use of common verbs e.g. is, has, can, evalute, do, etc.
     [Javascript naming conventions](https://www.robinwieruch.de/javascript-naming-conventions), [naming conventions](https://help.geektrust.com/article/102-naming-conventions)
 3. Avoid magic numbers 
